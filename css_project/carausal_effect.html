@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carausal</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html{
+      font-size: 62.5%;
+    }
+    body{
+      height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+    .container-img{
+      width: 60vw;
+      height: 50rem;
+      border-radius: 1rem;
+      box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+      background-image: url("https://i.pinimg.com/564x/43/ed/d9/43edd99632e259620b9abd466e3c0f58.jpg");
+      background-size: cover;
+      animation: gallery 20s linear infinite;
+    }
+
+    @keyframes gallery {
+      0%{
+        background-image: url("https://i.pinimg.com/564x/4c/29/89/4c2989a9b1948401c0a1b6d6ad3fc978.jpg");
+      }
+      20%{
+        background-image: url("https://i.pinimg.com/564x/ba/83/96/ba83966dd11f354757d2d5061e60dc82.jpg");
+      }
+      40%{
+        background-image: url("https://i.pinimg.com/564x/e4/f6/88/e4f688fe1d0bd53bcb8436a0f2d38c66.jpg");
+      }
+      60%{
+        background-image: url("https://i.pinimg.com/564x/1a/d9/8e/1ad98e937d222a30c0f9f32f9d0a066c.jpg");
+      }
+      80%{
+        background-image: url("https://i.pinimg.com/564x/fd/0b/df/fd0bdfafb176bd89840856ada7f01ca7.jpg");
+      }
+      100%{
+        background-image: url("https://i.pinimg.com/564x/be/57/63/be576339c387135ca1fb4c292d17b37d.jpg");
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container-img"></div>
+  
+</body>
+</html>
